@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Currency Converty</title>
+
+    <!-- FontAwesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Currency Converty</h1>
+      <div class="inputAmt">
+        <label for="amount" id="amountName">Amount</label>
+        <input
+          type="text"
+          class="amount"
+          id="amount"
+          placeholder="Enter the Amount"
+        />
+      </div>
+      <select id="selectFrom"></select>
+      <div id="swap-container">
+        <button id="swapBtn">
+          <i class="fas fa-exchange-alt" id="swapIcon"></i>Swap
+        </button>
+      </div>
+      <select id="selectTo"></select>
+      <p id="rateEl"></p>
+      <div id="output" class="output"></div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
